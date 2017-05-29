@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <base href="https://htmlacademy-adaptive.github.io/287231-sedona/2/">
+</head>
+  <body>
+    <header class="page-header">
+      <div class="wrapper">
+        <div class="page-header__menu">
+          <img src="http://placehold.it/102x83" width="102" height="83" alt="Логотип Sedona">
+          <span class="page-header__hamburger"></span>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="logo logo--small">
+        <div class="wrapper">
+          <img src="http://placehold.it/229x39" width="229" height="39" alt="Добро пожаловать в Седону">
+        </div>
+      </section>
+
+      <section class="feedback">
+        <div class="wrapper">
+          <h2 class="feedback__title">Оставьте свой отзыв</h2>
+          <p class="feedback__text">
+            Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          </p>
+
+          <form class="feedback__form" method="post" action="https://echo.htmlacademy.ru">
+            <fieldset class="feedback__items">
+              <legend class="feedback__caption">Представьтесь</legend>
+
+              <label class="feedback__label" for="name">Имя*</label>
+              <input class="feedback__text" id="name" type="text" name="name" value="Петр" required>
+
+              <label class="feedback__label" for="surname">Фамилия</label>
+              <input class="feedback__text" id="surname" type="text" name="surname" value="Иванов">
+
+              <label class="feedback__label" for="patronymic">Отчество</label>
+              <input class="feedback__text" id="patronymic" type="text" name="patronymic" value="Александрович">
+            </fieldset>
+
+            <fieldset class="feedback__items">
+              <legend class="feedback__caption">Контактная информация:</legend>
+
+              <label class="feedback__label" for="tel">Контактный телефон*</label>
+              <input class="feedback__text" id="tel" type="tel" name="tel" value="Введите телефон" required>
+
+              <label class="feedback__label" for="email">Электронная почта*</label>
+              <input class="feedback__text" id="email" type="email" name="email" value="Введите e-mail" required>
+            </fieldset>
+
+            <fieldset class="feedback__items">
+              <legend class="feedback__caption">Ваше общее впечатление:</legend>
+
+              <input class="feedback__radio" id="positive" type="radio" name="impression" value="positive" checked>
+              <label class="feedback__label" for="positive">Скорее положительное</label>
+
+              <input class="feedback__radio" id="negative" type="radio" name="impression" value="negative">
+              <label class="feedback__label" for="negative">Скорее положительное</label>
+
+              <input class="feedback__radio" id="neutral" type="radio" name="impression" value="neutral">
+              <label class="feedback__label" for="neutral">Затрудняюсь ответить</label>
+            </fieldset>
+
+            <fieldset class="feedback__items">
+              <legend class="feedback__caption">Посещенные достопримечательности:</legend>
+
+              <input class="feedback__checkbox" id="devilBridge" type="checkbox" name="places" value="devilBridge" checked>
+              <label class="feedback__label" for="devilBridge">Мост дьявола</label>
+
+              <input class="feedback__checkbox" id="slidePark" type="checkbox" name="places" value="slidePark" checked>
+              <label class="feedback__label" for="slidePark">Слайд-парк</label>
+
+              <input class="feedback__checkbox" id="bellMountain" type="checkbox" name="places" value="bellMountain">
+              <label class="feedback__label" for="bellMountain">Гора-Колокол</label>
+
+              <input class="feedback__checkbox" id="redRocks" type="checkbox" name="places" value="redRocks" checked>
+              <label class="feedback__label" for="redRocks">Красные скалы</label>
+            </fieldset>
+
+            <fieldset class="feedback__items">
+              <legend class="feedback__caption">Опишите свои эмоции:</legend>
+
+              <textarea class="feedback__textarea" name="emotions" id="emotions">
+                Опишите подробно все свои восторги
+              </textarea>
+            </fieldset>
+
+            <button class="feedback__submit" type="submit">Отправить отзыв</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="find-hotel">
+        <div class="wrapper">
+          <h2 class="find-hotel__heading">Заинтересовались?</h2>
+          <p class="find-hotel__description">
+            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+          </p>
+          <a class="btn" href="#">Найти гостиницу</a>
+        </div>
+      </section>
+
+      <section class="map">
+        <div class="wrapper">
+          <div class="map__container">
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="wrapper">
+        <b class="pager-footer__hashtag">#visitsedona</b>
+        <div class="social">
+          <a class="social__link social__link--twitter"></a>
+          <a class="social__link social__link--facebook"></a>
+          <a class="social__link social__link--instagram"></a>
+        </div>
+        <a class="page-footer__copyright"></a>
+      </div>
+    </footer>
+  </body>
+</html>
