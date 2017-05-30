@@ -7,23 +7,25 @@
   <body>
     <header class="page-header">
       <div class="wrapper">
-        <div class="page-header__menu">
-          <img src="http://placehold.it/102x83" width="102" height="83" alt="Логотип Sedona">
-          <span class="page-header__hamburger"></span>
+        <div class="page-header__logo">
+          <a class="page-header__link" href="index.html">
+            <img src="http://placehold.it/102x83" width="102" height="83" alt="Логотип Sedona">
+          </a>
         </div>
         <nav class="main-nav">
-          <ul class="main-nav__items">
+          <button class="page-header__hamburger"></button>
+          <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#">Главная</a>
+              <a class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Фото и видео</a>
+              <a class="main-nav__link" href="#">Фото и видео</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Форма отзыва</a>
+              <a class="main-nav__link" href="#">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">HTML Academy</a>
+              <a class="main-nav__link" href="#">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -31,7 +33,7 @@
     </header>
 
     <main>
-      <section class="logo logo--small">
+      <section class="page-intro page-intro--small">
         <div class="wrapper">
           <img src="http://placehold.it/282x214" width="282" height="214" alt="Добро пожаловать в Седону">
         </div>
@@ -39,44 +41,68 @@
 
       <section class="gallery">
         <div class="wrapper">
-          <div class="gallery__header">
+          <header class="gallery__header">
             <h2 class="gallery__heading">Фото и видео</h2>
             <p class="gallery__text">
               Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
             </p>
-          </div>
+          </header>
 
-          <div class="photo">
-            <img src="http://placehold.it/280x280" width="280" height="280" alt="Неродные просторы">
-            <h3 class="photo__caption">Неродные просторы</h3>
-            <span class="photo__copyright">Автор фото: Борис</span>
-            <span class="photo__like"></span>
-            <span class="photo__likes-number">1350</span>
-          </div>
+          <article class="gallery-item">
+            <a href="http://placehold.it/280x280">
+              <img src="http://placehold.it/280x280" width="280" height="280" alt="Неродные просторы">
+            </a>
+            <div class="gallery-item__wrapper">
+              <h3 class="gallery-item__caption">Неродные просторы</h3>
+              <span class="gallery-item__copyright">Автор фото: Борис</span>
+              <div class="like">
+                <button class="like__button"></button>
+              </div>
+              <span class="gallery-item__likes-number">1350</span>
+            </div>
+          </article>
 
-          <div class="photo">
-            <img src="http://placehold.it/280x280" width="280" height="280" alt="Местная растительность">
-            <h3 class="photo__caption">Местная растительность</h3>
-            <span class="photo__copyright">Автор фото: Сергей</span>
-            <span class="photo__like"></span>
-            <span class="photo__likes-number">143</span>
-          </div>
+          <article class="gallery-item">
+            <a href="http://placehold.it/280x280">
+              <img src="http://placehold.it/280x280" width="280" height="280" alt="Местная растительность">
+            </a>
+            <div class="gallery-item__wrapper">
+              <h3 class="gallery-item__caption">Местная растительность</h3>
+              <span class="gallery-item__copyright">Автор фото: Сергей</span>
+              <div class="like">
+                <button class="like__button"></button>
+              </div>
+              <span class="gallery-item__likes-number">143</span>
+            </div>
+          </article>
 
-          <div class="photo">
-            <img src="http://placehold.it/280x280" width="280" height="280" alt="Дорога на север">
-            <h3 class="photo__caption">Дорога на север</h3>
-            <span class="photo__copyright">Автор фото: Петр</span>
-            <span class="photo__like"></span>
-            <span class="photo__likes-number">96</span>
-          </div>
+          <article class="gallery-item">
+            <a href="http://placehold.it/280x280">
+              <img src="http://placehold.it/280x280" width="280" height="280" alt="Дорога на север">
+            </a>
+            <div class="gallery-item__wrapper">
+              <h3 class="gallery-item__caption">Дорога на север</h3>
+              <span class="gallery-item__copyright">Автор фото: Петр</span>
+              <div class="like">
+                <button class="like__button"></button>
+              </div>
+              <span class="gallery-item__likes-number">96</span>
+            </div>
+          </article>
 
-          <div class="photo">
-            <img src="http://placehold.it/280x280" width="280" height="280" alt="Мост дьявола">
-            <h3 class="photo__caption">Мост дьявола</h3>
-            <span class="photo__copyright">Автор фото: Антон</span>
-            <span class="photo__like"></span>
-            <span class="photo__likes-number">254</span>
-          </div>
+          <article class="gallery-item">
+            <a href="http://placehold.it/280x280">
+              <img src="http://placehold.it/280x280" width="280" height="280" alt="Мост дьявола">
+            </a>
+            <div class="gallery-item__wrapper">
+              <h3 class="gallery-item__caption">Мост дьявола</h3>
+              <span class="gallery-item__copyright">Автор фото: Антон</span>
+              <div class="like">
+                <button class="like__button"></button>
+              </div>
+              <span class="gallery-item__likes-number">254</span>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -93,13 +119,13 @@
 
     <footer class="page-footer">
       <div class="wrapper">
-        <b class="pager-footer__hashtag">#visitsedona</b>
+        <p class="pager-footer__hashtag">#visitsedona</p>
         <div class="social">
           <a class="social__link social__link--twitter"></a>
           <a class="social__link social__link--facebook"></a>
           <a class="social__link social__link--instagram"></a>
         </div>
-        <a class="page-footer__copyright"></a>
+        <p class="page-footer__copyright"></p>
       </div>
     </footer>
   </body>
