@@ -1,5 +1,5 @@
 .form {
-
+  .wrapper()
 }
 
 .form__items {
@@ -27,11 +27,15 @@
 
   &--checkbox {
     color: black;
+    text-transform: none;
+
     .heading();
   }
 }
 
 .form__text {
+  height: 58px;
+  padding-left: 22px;
   border: none;
   background-color: @sedona-gray;
 
@@ -39,5 +43,9 @@
 }
 
 .form__textarea {
+  font-family: inherit;
+  border: none;
+  background-color: @sedona-gray;
+
   .heading();
 }

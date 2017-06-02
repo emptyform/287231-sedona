@@ -3,16 +3,25 @@
 }
 
 .advantages__header {
-
+  .wrapper()
 }
 
 .advantages__title {
   .heading()
 }
 
+.advantages__item {
+  margin: 0;
+  background-color: @sedona-blue;
+}
+
 .advantages__caption {
+  height: 190px;
+  margin: 0;
   color: white;
   background-color: @sedona-blue;
+
+  .wrapper();
 
   &--inactive {
     color: black;
@@ -27,6 +36,9 @@
 
 .advantages__photo {
   background-size: cover;
+  width: 100%;
+  height: 260px;
+  margin: 0;
 
   &--town {
     background-image: url('../img/photo-city-mobile@1x.jpg');
@@ -38,7 +50,7 @@
 }
 
 .advantages__heading {
-  .heading()
+  .heading();
 }
 
 .advantages__text {
@@ -48,11 +60,13 @@
 }
 
 .advantages__features {
+  background-color: white;
+
   .list();
 }
 
 .advantages__feature {
-
+  .wrapper();
 }
 
 .advantages__feature-heading {
