@@ -7,7 +7,7 @@
 }
 
 .advantages__title {
-  .heading-one()
+  .heading()
 }
 
 .advantages__caption {
@@ -20,6 +20,11 @@
   }
 }
 
+.advantages__descr {
+  color: @text-gray;
+  line-height: 26px;
+}
+
 .advantages__photo {
   background-size: cover;
 
@@ -30,4 +35,31 @@
   &--bridge {
     background-image: url('../img/photo-bridge-mobile@1x.jpg');
   }
+}
+
+.advantages__heading {
+  .heading()
+}
+
+.advantages__text {
+  &--inactive {
+    color: @text-gray;
+  }
+}
+
+.advantages__features {
+  .list();
+}
+
+.advantages__feature {
+
+}
+
+.advantages__feature-heading {
+  color: black;
+  .heading();
+}
+
+.advantages__feature-text {
+  color: @text-gray;
 }
