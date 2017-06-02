@@ -1,0 +1,263 @@
+.advantages__header {
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.advantages__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.advantages__item {
+  margin: 0;
+  background-color: #81b3d2;
+}
+.advantages__caption {
+  height: 190px;
+  margin: 0;
+  color: white;
+  background-color: #81b3d2;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.advantages__caption--inactive {
+  color: black;
+  background-color: #eeeeee;
+}
+.advantages__descr {
+  color: #333333;
+  line-height: 26px;
+}
+.advantages__photo {
+  background-size: cover;
+  width: 100%;
+  height: 260px;
+  margin: 0;
+}
+.advantages__photo--town {
+  background-image: url('../img/photo-city-mobile@1x.jpg');
+}
+.advantages__photo--bridge {
+  background-image: url('../img/photo-bridge-mobile@1x.jpg');
+}
+.advantages__heading {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.advantages__text--inactive {
+  color: #333333;
+}
+.advantages__features {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.advantages__feature {
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.advantages__feature-heading {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.advantages__feature-text {
+  color: #333333;
+}
+.btn {
+  color: white;
+  background-color: #81b3d2;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.feedback__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.feedback__text {
+  line-height: 24px;
+}
+.form {
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.form__items {
+  border: none;
+}
+.form__caption {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.form__label {
+  line-height: 26px;
+  color: #333333;
+}
+.form__label--checkbox {
+  color: black;
+  text-transform: none;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.form__text {
+  height: 58px;
+  padding-left: 22px;
+  border: none;
+  background-color: #eeeeee;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.form__textarea {
+  font-family: inherit;
+  border: none;
+  background-color: #eeeeee;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.gallery-item {
+  color: black;
+}
+.gallery-item__caption {
+  font-size: 14px;
+  line-height: 24px;
+}
+.gallery-item__copyright {
+  color: #333333;
+  font-weight: normal;
+  line-height: 24px;
+  text-transform: none;
+}
+.gallery-item__likes-number {
+  font-weight: bold;
+  line-height: 24px;
+}
+.gallery {
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.gallery__heading {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.gallery__text {
+  color: #333333;
+  line-height: 24px;
+}
+.hotel-search {
+  background-color: white;
+}
+.hotel-search__heading {
+  color: black;
+  font-size: 24px;
+  line-height: 26px;
+}
+.hotel-search__descr {
+  color: #333333;
+  line-height: 24px;
+}
+.main-nav {
+  color: white;
+  background-color: #81b3d2;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-nav__link {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+  color: white;
+  text-decoration: none;
+}
+.map__container {
+  background-size: cover;
+  background-image: url('../img/bg-back-mobile@1x.jpg');
+}
+.page-footer {
+  background-color: white;
+}
+.pager-footer__hashtag {
+  color: black;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.page-footer__copyright {
+  line-height: 26px;
+}
+.page-header {
+  background-color: #81b3d2;
+}
+.page-intro {
+  height: 389px;
+  background-size: cover;
+  background-image: url('../img/bg-back-mobile@1x.jpg');
+}
+.social__link {
+  background-color: #81b3d2;
+  fill: white;
+}
+.social__link--twitter {
+  background-image: url('../img/icon-twitter.svg');
+}
+.social__link--facebook {
+  background-image: url('../img/icon-facebook.svg');
+}
+.social__link--youtube {
+  background-image: url('../img/icon-youtube.svg');
+}
+.video__heading {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.video__text {
+  line-height: 24px;
+}
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/ptsans.woff');
+}
+@font-face {
+  font-family: 'PT Sans Bold';
+  src: url('../fonts/ptsansbold.woff');
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  max-width: 320px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
