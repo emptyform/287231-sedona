@@ -1,0 +1,51 @@
+.form {
+  .wrapper()
+}
+
+.form__items {
+  border: none;
+}
+
+.form__caption {
+  .heading();
+}
+
+.form__wrapper {
+
+  &--vertical {
+
+  }
+
+  &--checkbox {
+
+  }
+}
+
+.form__label {
+  line-height: 26px;
+  color: @text-gray;
+
+  &--checkbox {
+    color: black;
+    text-transform: none;
+
+    .heading();
+  }
+}
+
+.form__text {
+  height: 58px;
+  padding-left: 22px;
+  border: none;
+  background-color: @sedona-gray;
+
+  .heading();
+}
+
+.form__textarea {
+  font-family: inherit;
+  border: none;
+  background-color: @sedona-gray;
+
+  .heading();
+}
