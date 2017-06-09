@@ -1,0 +1,202 @@
+// main: ../style.less
+.advantages {
+  display: flex;
+  flex-direction: column;
+
+  @media @tablet-width {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.advantages__description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 190px;
+  margin: 0;
+  padding-top: 40px;
+  color: black;
+  text-align: center;
+  background-color: white;
+
+  .wrapper(20px, 20px);
+
+  @media @tablet-width {
+    min-height: 205px;
+    .wrapper(0, 0);
+  }
+}
+
+.advantages__title {
+  color: black;
+  margin: 0;
+
+  .heading();
+
+  @media @tablet-width {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+  }
+}
+
+.advantages__comment {
+  margin-top: 28px;
+  color: black;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  background-color: @sedona-blue;
+  width: 100%;
+
+  @media @tablet-width {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &--inactive {
+    background-color: @sedona-gray;
+
+    @media @tablet-width {
+      width: 256px;
+      height: 256px;
+    }
+
+    @media @desktop-width {
+      width: 400px;
+    }
+  }
+}
+
+.advantages__item-caption {
+  display: flex;
+  flex-direction: column;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  color: white;
+
+  .wrapper(6.25%, 6.25%);
+
+  @media @tablet-width {
+    width: 256px;
+    padding: 46px;
+  }
+
+  &--inactive {
+    color: black;
+
+    @media @tablet-width {
+      width: 768px;
+    }
+
+    @media @desktop-width {
+      width: 1200px;
+    }
+  }
+
+  &--bridge {
+    @media @tablet-width {
+      order: 2;
+    }
+  }
+}
+
+.advantages__item-heading {
+  margin: 0;
+  text-align: center;
+
+  .heading();
+
+  &--inactive {
+    color: @text-gray;
+  }
+}
+
+.advantages__item-text {
+  margin: 0;
+  text-align: center;
+
+  &--inactive {
+    color: @text-gray;
+  }
+}
+
+.advantages__photo {
+  background-size: cover;
+  height: 258px;
+  margin: 0;
+
+  @media @tablet-width {
+    width: 200% / 3;
+  }
+
+  &--town {
+    background-image: url('../img/photo-city-mobile@1x.jpg');
+  }
+
+  &--bridge {
+    background-image: url('../img/photo-bridge-mobile@1x.jpg');
+
+    @media @tablet-width {
+      order: 1;
+    }
+  }
+}
+
+.advantages__features {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  text-align: center;
+
+  .list();
+
+  @media @tablet-width {
+    flex-direction: row;
+    height: 328px;
+  }
+}
+
+.advantages__feature {
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+
+  &--stay {
+    @media @tablet-width {
+      order: 1;
+    }
+  }
+
+  &--food {
+    @media @tablet-width {
+      order: 2;
+    }
+  }
+
+  &--souvenirs {
+    @media @tablet-width {
+      order: 3;
+    }
+  }
+
+  @media @tablet-width {
+
+  }
+}
+
+.advantages__feature-heading {
+  color: black;
+
+  .heading();
+}
+
+.advantages__feature-text {
+  color: @text-gray;
+  text-align: center;
+}

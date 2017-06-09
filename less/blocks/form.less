@@ -1,0 +1,166 @@
+// main: ../style.less
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-bottom: 47px;
+
+  @media @tablet-width {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid @body-bg;
+
+  @media @tablet-width {
+    width: 648px;
+    padding: 0;
+  }
+
+  @media @desktop-width {
+    width: 960px;
+    padding: 0;
+  }
+
+  &--name {
+    min-height: 305px;
+
+
+    @media @tablet-width {
+      order: 2;
+      width: 324px;
+    }
+
+    @media @desktop-width {
+      width: 480px;
+    }
+  }
+
+  &--contact {
+    min-height: 287px;
+
+    @media @tablet-width {
+      order: 3;
+    }
+  }
+
+  &--impression {
+    min-height: 289px;
+
+    @media @tablet-width {
+      order: 1;
+      width: 324px;
+    }
+
+    @media @desktop-width {
+      width: 480px;
+    }
+  }
+
+  &--places {
+    min-height: 409px;
+
+    @media @tablet-width {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0 94px;
+      order: 4;
+    }
+  }
+
+  &--emotions {
+    min-height: 272px;
+
+    @media @tablet-width {
+      order: 5;
+    }
+  }
+}
+
+.form__legend {
+  margin-top: 22px;
+  margin-bottom: 22px;
+
+  .heading();
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+
+  &--vertical {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &--checkbox {
+    height: 56px;
+    margin-bottom: 15px;
+
+    @media @tablet-width {
+      width: 229px;
+    }
+  }
+
+  &--radio {
+    height: 56px;
+    margin-bottom: 15px;
+  }
+}
+
+.form__label {
+  margin-right: 10px;
+  line-height: 26px;
+  color: @text-gray;
+
+  &--checkbox {
+    color: black;
+    text-transform: none;
+
+    .heading();
+  }
+
+  &--radio {
+    color: black;
+    text-transform: none;
+
+    .heading();
+  }
+}
+
+.form__text {
+  height: 58px;
+  width: 100%;
+  padding-left: 22px;
+  border: none;
+  background-color: @sedona-gray;
+
+  .heading();
+}
+
+.form__textarea {
+  font-family: inherit;
+  border: none;
+  background-color: @sedona-gray;
+
+  .heading();
+}
+
+.form__btn-wrapper {
+  @media @tablet-width {
+    order: 6;
+  }
+}

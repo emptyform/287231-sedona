@@ -1,0 +1,44 @@
+// main: ../style.less
+.gallery {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media @tablet-width {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media @desktop-width {
+    padding: 0;
+  }
+}
+
+.gallery__header {
+  @media @tablet-width {
+    min-height: 248px;
+  }
+
+  @media @desktop-width {
+    min-height: 287px;
+  }
+}
+
+.gallery__heading {
+  .heading();
+
+  @media @tablet-width {
+    margin-top: 75px;
+    font-size: 30px;
+  }
+}
+
+.gallery__text {
+  color: @text-gray;
+  line-height: 24px;
+  text-align: center;
+}

@@ -1,0 +1,20 @@
+// main: ../style.less
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  @media @tablet-width {
+    background-color: @body-bg;
+  }
+}
