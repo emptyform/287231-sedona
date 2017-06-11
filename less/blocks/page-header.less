@@ -1,3 +1,25 @@
+// main: ../style.less
 .page-header {
-  background-color: @sedona-blue
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: white;
+
+  @media @tablet-width {
+    flex-direction: row;
+  }
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 224px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 102px;
+
+  @media @tablet-width {
+    top: 0;
+  }
 }

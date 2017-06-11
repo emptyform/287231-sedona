@@ -1,5 +1,20 @@
+// main: ../style.less
 .video {
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid red;
 
+  @media @tablet-width {
+    padding-left: 60px;
+    padding-right: 60px;
+    min-height: 244px;
+  }
+}
+
+.video__caption {
+  @media @tablet-width {
+    min-height: 245px;
+  }
 }
 
 .video__heading {
@@ -8,4 +23,18 @@
 
 .video__text {
   line-height: 24px;
+  text-align: center;
+}
+
+.video__container {
+  @media @tablet-width {
+    min-height: 500px;
+    width: 648px;
+    margin-bottom: 40px;
+  }
+
+  @media @desktop-width {
+    width: 800px;
+    margin-bottom: 85px;
+  }
 }

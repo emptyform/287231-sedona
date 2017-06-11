@@ -1,5 +1,23 @@
+// main: ../style.less
 .feedback {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
 
+  @media @tablet-width {
+    padding: 0 60px;
+  }
+
+  @media @desktop-width {
+    padding: 0 120px;
+  }
+}
+
+.feedback__header {
+  display: flex;
+  flex-direction: column;
+  height: 204px;
+  border-bottom: 1px solid @body-bg;
 }
 
 .feedback__title {
@@ -8,4 +26,5 @@
 
 .feedback__text {
   line-height: 24px;
+  text-align: center;
 }

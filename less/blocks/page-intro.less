@@ -1,5 +1,41 @@
+// main: ../style.less
 .page-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 389px;
+  width: 100%;
   background-size: cover;
   background-image: url('../img/bg-back-mobile@1x.jpg');
+
+  @media @tablet-width {
+    height: 518px;
+  }
+
+  &--small {
+    height: 158px;
+
+    @media @tablet-width {
+      height: 290px;
+    }
+
+    @media @desktop-width {
+      height: 301px;
+    }
+  }
+}
+
+.page-intro__decorative-triangle {
+  position: absolute;
+  z-index: 10;
+  top: 611px;
+  height: 58px;
+  width: 100%;
+  background-image: url('../img/bg-intro-triangle-mobile.svg');
+  background-size: cover;
+  background-position: center;
+
+  @media @tablet-width {
+    top: 516px;
+  }
 }

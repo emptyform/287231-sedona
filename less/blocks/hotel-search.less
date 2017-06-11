@@ -1,14 +1,43 @@
+// main: ../style.less
 .hotel-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 287px;
+  padding: 20px 0;
   background-color: white;
+
+  @media @tablet-width {
+    height: 318px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 56px;
+    padding-bottom: 58px;
+  }
+
+  @media @desktop-width {
+    height: 331px;
+    padding-left: 371px;
+    padding-right: 371px;
+    padding-bottom: 66px;
+  }
 }
 
 .hotel-search__heading {
+  margin: 0;
   color: black;
+  font-family: 'PT Sans Bold', Arial, sans-serif;
   font-size: 24px;
   line-height: 26px;
+  text-align: center;
+
+  @media @tablet-width {
+    font-size: 30px;
+  }
 }
 
 .hotel-search__descr {
   color: @text-gray;
   line-height: 24px;
+  text-align: center;
 }
