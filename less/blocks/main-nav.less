@@ -1,11 +1,11 @@
 // main: ../style.less
 .main-nav {
-  height: 280px;
+  position: relative;
   width: 100%;
   color: white;
 
   @media @tablet-width {
-    height: 56px;
+    min-height: 56px;
     color: black;
   }
 }
@@ -16,7 +16,6 @@
   right: 20px;
   height: 22px;
   width: 23px;
-  fill: @sedona-blue;
   background-color: transparent;
   background-image: url('../img/icon-menu.svg');
   border: none;
@@ -78,7 +77,7 @@
 }
 
 .main-nav__link {
-  height: 56px;
+  padding-bottom: 7px;
   padding-top: 9px;
   font-size: 18px;
   font-weight: bold;
@@ -92,7 +91,6 @@
     padding-top: 15px;
     font-size: 14px;
     line-height: 26px;
-
 
     .link(black);
   }

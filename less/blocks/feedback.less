@@ -1,30 +1,53 @@
 // main: ../style.less
 .feedback {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-
   @media @tablet-width {
     padding: 0 60px;
+    padding-top: 28px;
   }
 
   @media @desktop-width {
     padding: 0 120px;
+    padding-top: 65px;
   }
 }
 
 .feedback__header {
-  display: flex;
-  flex-direction: column;
-  height: 204px;
+  padding-top: 25px;
+  padding-bottom: 3px;
   border-bottom: 1px solid @body-bg;
+
+  @media @tablet-width {
+    padding-bottom: 42px;
+    border: none;
+  }
+
+  @media @desktop-width {
+    padding-bottom: 26px;
+  }
 }
 
 .feedback__title {
+  margin-bottom: 26px;
+
   .heading();
+
+  @media @tablet-width {
+    margin-bottom: 28px;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .feedback__text {
   line-height: 24px;
   text-align: center;
+  color: @text-gray;
+
+  @media @tablet-width {
+    padding: 0 105px;
+  }
+
+  @media @desktop-width {
+    padding: 0 260px;
+  }
 }
