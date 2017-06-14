@@ -5,34 +5,53 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  min-height: 233px;
+  padding-bottom: 23px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 35px;
   background-color: white;
 
   @media @tablet-width {
     flex-direction: row;
     height: 120px;
     padding-left: 60px;
-    padding-right: 60px;
+    padding-right: 55px;
   }
 
   @media @desktop-width {
     padding-left: 133px;
-    padding-right: 44px;
+    padding-right: 38px;
   }
 }
 
 .pager-footer__hashtag {
   margin: 0;
   color: black;
+  margin-bottom: 37px;
 
   .bold();
+
+  @media @tablet-width {
+    margin-bottom: 15px;
+  }
 }
 
 .page-footer__copyright {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  min-width: 140px;
+  padding: 0 6px;
+  margin-top: 40px;
   line-height: 26px;
   text-align: center;
+
+  @media @tablet-width {
+    margin-top: 0;
+  }
+}
+
+.page-footer__academy {
+  width: 27px;
+  height: 34px;
 }

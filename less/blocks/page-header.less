@@ -1,6 +1,7 @@
 // main: ../style.less
 .page-header {
   position: relative;
+  z-index: 20;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -12,14 +13,24 @@
 }
 
 .page-header__logo {
-  position: absolute;
-  top: 224px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: 102px;
+  display: flex;
+  justify-content: center;
+  order: 2;
+  width: 100%;
+  height: 56px;
+  background-color: white;
 
   @media @tablet-width {
-    top: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 30;
+    width: 102px;
+    margin: 0 auto;
   }
+}
+
+.page-header__logo-wrapper {
+  width: 102px;
+  height: 83px;
 }

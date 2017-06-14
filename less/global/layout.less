@@ -6,7 +6,7 @@
 }
 
 body {
-  width: 100%;
+  min-width: 320px;
   box-sizing: border-box;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
@@ -16,5 +16,10 @@ body {
 
   @media @tablet-width {
     background-color: @body-bg;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
   }
 }

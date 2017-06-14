@@ -1,10 +1,14 @@
 // main: ../style.less
 .page-intro {
+  position: relative;
+  z-index: 10;
+
   display: flex;
   justify-content: center;
   align-items: center;
   height: 389px;
-  width: 100%;
+
+
   background-size: cover;
   background-image: url('../img/bg-back-mobile@1x.jpg');
 
@@ -25,17 +29,36 @@
   }
 }
 
+.page-intro__logo-wrapper {
+  width: 282px;
+  height: 214px;
+  margin-bottom: 17px;
+
+  @media @tablet-width {
+    width: 460px;
+    height: 350px;
+    margin-bottom: 10px;
+  }
+
+  &--small {
+    width: 229px;
+    height: 39px;
+
+    @media @tablet-width {
+      width: 458px;
+      height: 78px;
+      margin-bottom: 23px;
+    }
+  }
+}
+
 .page-intro__decorative-triangle {
   position: absolute;
-  z-index: 10;
-  top: 611px;
+  z-index: 20;
+  bottom: 0;
   height: 58px;
   width: 100%;
   background-image: url('../img/bg-intro-triangle-mobile.svg');
   background-size: cover;
   background-position: center;
-
-  @media @tablet-width {
-    top: 516px;
-  }
 }
