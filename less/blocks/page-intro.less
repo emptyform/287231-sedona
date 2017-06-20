@@ -8,23 +8,47 @@
   align-items: center;
   height: 389px;
 
-
+  background-image: url('../img/bg-intro-triangle-mobile.svg'), url('../img/bg-back-mobile@1x.jpg');
+  background-position: bottom, center;
   background-size: cover;
-  background-image: url('../img/bg-back-mobile@1x.jpg');
+  background-repeat: no-repeat;
 
   @media @tablet-width {
     height: 518px;
+    background-image: url('../img/bg-intro-triangle-tablet.svg'),url('../img/bg-back-tablet@1x.jpg');
+    background-size: 100%, cover;
+    background-position: bottom, center;
+  }
+
+  @media @desktop-width {
+    background-image: url('../img/bg-intro-triangle-desktop.svg'),url('../img/bg-back-desktop@1x.jpg');
+  }
+
+  @media @retina {
+    background-image: url('../img/bg-intro-triangle-mobile.svg'), url('../img/bg-back-mobile@2x.jpg');
+  }
+
+  @media @retina and @tablet-width {
+    background-image: url('../img/bg-intro-triangle-tablet.svg'),url('../img/bg-back-tablet@2x.jpg');
+  }
+
+  @media @retina and @desktop-width {
+    background-image: url('../img/bg-intro-triangle-desktop.svg'),url('../img/bg-back-desktop@2x.jpg');
   }
 
   &--small {
     height: 158px;
+    background-size: cover;
 
     @media @tablet-width {
       height: 290px;
+      background-size: 100%, cover;
+      background-position: bottom, center;
     }
 
     @media @desktop-width {
       height: 301px;
+      background-position: bottom, center;
     }
   }
 }
@@ -32,7 +56,6 @@
 .page-intro__logo-wrapper {
   width: 282px;
   height: 214px;
-  margin-bottom: 17px;
 
   @media @tablet-width {
     width: 460px;
@@ -43,6 +66,7 @@
   &--small {
     width: 229px;
     height: 39px;
+    margin-bottom: 17px;
 
     @media @tablet-width {
       width: 458px;
@@ -50,15 +74,4 @@
       margin-bottom: 23px;
     }
   }
-}
-
-.page-intro__decorative-triangle {
-  position: absolute;
-  z-index: 20;
-  bottom: 0;
-  height: 58px;
-  width: 100%;
-  background-image: url('../img/bg-intro-triangle-mobile.svg');
-  background-size: cover;
-  background-position: center;
 }

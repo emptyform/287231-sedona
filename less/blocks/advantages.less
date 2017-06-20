@@ -31,6 +31,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
+    width: 500px;
   }
 
   @media @desktop-width {
@@ -41,22 +42,14 @@
 .advantages__comment {
   margin-top: 26px;
   margin-bottom: 3px;
-  color: black;
+  color: @text-gray;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
-}
-
-.advantages__decorative-triangle {
-  width: 100%;
-  height: 38px;
-  background-color: @sedona-blue;
-  background-image: url('../img/bg-triangle.svg');
-  background-size: cover;
-  background-position: center;
 
   @media @tablet-width {
-    display: none;
+    margin-top: 28px;
+    margin-bottom: 0;
   }
 }
 
@@ -83,11 +76,16 @@
 
 .advantages__item-caption {
   padding: 40px 20px;
+  padding-top: 78px;
   color: white;
+  background-image: url('../img/bg-triangle.svg');
+  background-position: top;
+  background-repeat: no-repeat;
 
   @media @tablet-width {
     width: 100% / 3;
     padding: 46px;
+    background-image: none;
   }
 
   @media @desktop-width {
@@ -98,6 +96,7 @@
   &--inactive {
     padding-top: 27px;
     padding-bottom: 27px;
+    background-image: none;
 
     @media @tablet-width {
       padding-top: 44px;
@@ -107,14 +106,17 @@
 
   &--bridge {
     padding-top: 38px;
+    background-image: none;
 
     @media @tablet-width {
       order: 2;
       padding-top: 44px;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     @media @desktop-width {
-      padding-top: 55px;
+      padding-top: 52px;
     }
   }
 }
@@ -129,7 +131,7 @@
   .heading();
 
   @media @desktop-width {
-    max-width: 170px;
+    max-width: 155px;
     margin-bottom: 11px;
   }
 
@@ -142,38 +144,109 @@
   }
 }
 
+.advantages__item-heading br {
+  display: none;
+
+  @media @tablet-width {
+    display: inline;
+  }
+}
+
+.advantages__item-heading--bridge br {
+  display: none;
+
+  @media @desktop-width {
+    display: inline;
+  }
+}
+
 .advantages__item-number {
   display: block;
   margin: 0;
   margin-bottom: 15px;
   text-align: center;
 
-  &--inactive {
-    color: @text-gray;
-  }
-
   @media @tablet-width {
     margin-bottom: 20px;
+  }
+
+  &--inactive {
+    color: @text-gray;
+
+    @media @tablet-width {
+      margin-bottom: 23px;
+    }
+
+    @media @desktop-width {
+      margin-bottom: 20px;
+    }
   }
 }
 
 .advantages__item-text {
   display: block;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
 
+  @media @tablet-width {
+    width: 165px;
+  }
+
+  @media @desktop-width {
+    width: 280px;
+  }
+
   &--inactive {
+    width: 250px;
     color: @text-gray;
+
+    @media @tablet-width {
+      width: 150px;
+    }
+
+    @media @desktop-width {
+      width: 260px;
+    }
+  }
+
+  &--square {
+    @media @tablet-width {
+      width: 170px;
+    }
+
+    @media @desktop-width {
+      width: 290px;
+    }
+  }
+
+  &--road {
+    @media @tablet-width {
+      width: 140px;
+    }
+
+    @media @desktop-width {
+      width: 270px;
+    }
+  }
+}
+
+.advantages__item-text br {
+  display: none;
+
+  @media @desktop-width {
+    display: inline;
   }
 }
 
 .advantages__photo {
   background-size: cover;
-  height: 256px;
+  background-position: center;
+  height: 260px;
   margin: 0;
 
   @media @tablet-width {
     width: 200% / 3;
+    height: 256px;
   }
 
   @media @desktop-width {
@@ -182,6 +255,26 @@
 
   &--town {
     background-image: url('../img/photo-city-mobile@1x.jpg');
+
+    @media @tablet-width {
+      background-image: url('../img/photo-city-tablet@1x.jpg');
+    }
+
+    @media @desktop-width {
+      background-image: url('../img/photo-city@1x.jpg');
+    }
+
+    @media @retina {
+      background-image: url('../img/photo-city-mobile@2x.jpg');
+    }
+
+    @media @retina and @tablet-width {
+      background-image: url('../img/photo-city-tablet@2x.jpg');
+    }
+
+    @media @retina and @desktop-width {
+      background-image: url('../img/photo-city@2x.jpg');
+    }
   }
 
   &--bridge {
@@ -189,6 +282,23 @@
 
     @media @tablet-width {
       order: 1;
+      background-image: url('../img/photo-bridge-tablet@1x.jpg');
+    }
+
+    @media @desktop-width {
+      background-image: url('../img/photo-bridge@1x.jpg');
+    }
+
+    @media @retina {
+      background-image: url('../img/photo-bridge-mobile@2x.jpg');
+    }
+
+    @media @retina and @tablet-width {
+      background-image: url('../img/photo-bridge-tablet@2x.jpg');
+    }
+
+    @media @retina and @desktop-width {
+      background-image: url('../img/photo-bridge@2x.jpg');
     }
   }
 }
@@ -263,7 +373,7 @@
   @media @tablet-width {
     text-align: center;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   &::before {
@@ -298,7 +408,8 @@
     &::before {
       width: 32px;
       height: 38px;
-      margin-right: 17px;
+      margin-left: 6px;
+      margin-right: 11px;
       background-image: url('../img/icon-gift.svg');
       background-size: 32px 38px;
 
@@ -306,6 +417,7 @@
         width: 77px;
         height: 75px;
         margin-right: 0;
+        margin-left: 0;
         background-size: 64px 75px;
       }
     }
@@ -337,7 +449,24 @@
   text-align: left;
 
   @media @tablet-width {
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+  }
+
+  @media @desktop-width {
+    width: 260px;
+
+    &--food {
+      width: 290px;
+    }
+  }
+}
+
+.advantages__feature-text--souvenirs br {
+  display: none;
+
+  @media @desktop-width {
+    display: inline;
   }
 }
