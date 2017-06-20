@@ -11,14 +11,21 @@
       <header class="page-header">
         <div class="page-header__logo">
           <a class="page-header__logo-wrapper" href="index.html">
-            <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Sedona">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg" />
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg" />
+              <img
+                src="img/logo-sedona-mobile.svg"
+                width="102"
+                height="83"
+                alt="Логотип Sedona">
+            </picture>
           </a>
         </div>
 
         <nav class="main-nav">
-          <div class="main-nav__toggle">
-            <button class="main-nav__hamburger" type="menu"></button>
-          </div>
+          <button class="main-nav__hamburger" type="button"></button>
+          <button class="main-nav__close" type="button"></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -75,14 +82,16 @@
             <div class="form__fieldset form__fieldset--contact">
               <h2 class="form__legend form__legend--contact">Контактная информация:</h2>
 
-              <div class="form__wrapper form__wrapper--vertical">
-                <label class="form__label form__label--vertical" for="tel"><span class="form__label-hidden">Контактный&nbsp;</span>телефон*:</label>
-                <input class="form__text form__text--contact" id="tel" type="tel" name="tel" placeholder="Введите телефон" required>
-              </div>
+              <div class="form__container">
+                <div class="form__wrapper form__wrapper--vertical form__wrapper--phone">
+                  <label class="form__label form__label--vertical" for="tel"><span class="form__label-hidden">Контактный&nbsp;</span>телефон*:</label>
+                  <input class="form__text form__text--contact" id="tel" type="tel" name="tel" placeholder="Введите телефон" required>
+                </div>
 
-              <div class="form__wrapper form__wrapper--vertical">
-                <label class="form__label form__label--vertical" for="email">Электронная почта*:</label>
-                <input class="form__text form__text--contact" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+                <div class="form__wrapper form__wrapper--vertical form__wrapper--email">
+                  <label class="form__label form__label--vertical" for="email">Электронная почта*:</label>
+                  <input class="form__text form__text--contact" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+                </div>
               </div>
             </div>
 
@@ -108,24 +117,26 @@
             <div class="form__fieldset form__fieldset--places">
               <h2 class="form__legend form__legend--places">Посещенные достопримечательности:</h2>
 
-              <div class="form__wrapper form__wrapper--checkbox">
-                <input class="form__checkbox" id="devil-bridge" type="checkbox" name="devil-bridge" checked>
-                <label class="form__label form__label--checkbox" for="devil-bridge">Мост Дьявола</label>
-              </div>
+              <div class="form__container">
+                <div class="form__wrapper form__wrapper--checkbox">
+                  <input class="form__checkbox" id="devil-bridge" type="checkbox" name="devil-bridge" checked>
+                  <label class="form__label form__label--checkbox" for="devil-bridge">Мост Дьявола</label>
+                </div>
 
-              <div class="form__wrapper form__wrapper--checkbox">
-                <input class="form__checkbox" id="slide-park" type="checkbox" name="slide-park" checked>
-                <label class="form__label form__label--checkbox" for="slide-park">Слайд-парк</label>
-              </div>
+                <div class="form__wrapper form__wrapper--checkbox">
+                  <input class="form__checkbox" id="slide-park" type="checkbox" name="slide-park" checked>
+                  <label class="form__label form__label--checkbox" for="slide-park">Слайд-парк</label>
+                </div>
 
-              <div class="form__wrapper form__wrapper--checkbox">
-                <input class="form__checkbox" id="bell-mountain" type="checkbox" name="bell-mountain">
-                <label class="form__label form__label--checkbox" for="bell-mountain">Гора-Колокол</label>
-              </div>
+                <div class="form__wrapper form__wrapper--checkbox">
+                  <input class="form__checkbox" id="bell-mountain" type="checkbox" name="bell-mountain">
+                  <label class="form__label form__label--checkbox" for="bell-mountain">Гора-Колокол</label>
+                </div>
 
-              <div class="form__wrapper form__wrapper--checkbox">
-                <input class="form__checkbox" id="red-rocks" type="checkbox" name="red-rocks" checked>
-                <label class="form__label form__label--checkbox" for="red-rocks">Красные скалы</label>
+                <div class="form__wrapper form__wrapper--checkbox">
+                  <input class="form__checkbox" id="red-rocks" type="checkbox" name="red-rocks" checked>
+                  <label class="form__label form__label--checkbox" for="red-rocks">Красные скалы</label>
+                </div>
               </div>
             </div>
 
@@ -137,7 +148,7 @@
 
             <div class="form__submit">
                 <div class="form__btn-wrapper">
-                  <button class="btn" type="submit">Отправить отзыв</button>
+                  <button class="btn btn--submit" type="submit">Отправить отзыв</button>
                 </div>
                 <div class="form__note">
                   <span>* — Обязательные поля</span>

@@ -15,7 +15,7 @@
 }
 
 .video__caption {
-  padding: 0 30px;
+  padding: 0 25px;
 
   @media @tablet-width {
     padding: 22px 30px;
@@ -39,21 +39,27 @@
 }
 
 .video__text {
-  padding: 0 13%;
   line-height: 24px;
   text-align: center;
+  color: @text-gray;
+
+  @media @tablet-width {
+    margin-left: auto;
+    margin-right: auto;
+    width: 74%;
+  }
 
   @media @desktop-width {
     width: 41%;
     padding: 0;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 .video__container {
-  position: relative;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   width: 100%;
   height: 201px;
   margin-top: 36px;
@@ -69,44 +75,44 @@
     width: 648px;
     margin-bottom: 40px;
     padding: 0;
+    background-image: url('../img/video-tablet@1x.jpg');
   }
 
   @media @desktop-width {
     width: 800px;
     margin-bottom: 85px;
+    background-image: url('../img/video-desktop@1x.jpg');
   }
 }
 
-.video__volume {
-  position: absolute;
-  bottom: 0;
-
+.video__timeline {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 30;
 
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 87.5%;
+  width: 100%;
   height: 45px;
 
+  background-color: rgba(0, 0, 0, 0.6);
+
   @media @tablet-width {
-    bottom: 45px;
-    left: 93px;
-    z-index: 20;
-
     width: 60%;
+    margin-bottom: -48px;
+    margin-right: 75px;
     height: auto;
-
-
-
     background-color: transparent;
+  }
+
+  @media @desktop-width {
+    width: 67.8%;
   }
 }
 
-.video__volume-scale {
+.video__timeline-scale {
+  display: flex;
   width: 83.92%;
   height: 3px;
-  position: relative;
 
   background-color: rgba(255, 255, 255, 0.2);
 
@@ -115,42 +121,36 @@
   }
 }
 
-.video__volume-control {
-  position: absolute;
-  left: 35px;
-  top: -3px;
-
-  width: 10px;
-  height: 10px;
+.video__timeline-control {
+  width: 9px;
+  height: 9px;
   padding: 0;
-  margin: 0;
+  margin-top: -3px;
+  margin-left: 36px;
 
   border-radius: 50%;
   border: none;
   background-color: rgb(255, 255, 255);
 
   @media @tablet-width {
-    left: 113px;
+    margin-left: 113px;
   }
 }
 
 .video__buttons {
-  position: absolute;
-  top: 201px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 87.5%;
+  width: 100%;
   height: 66px;
+  margin-bottom: -66px;
   padding: 0 23px;
 
   background-color: @body-bg;
 
   @media @tablet-width {
     top: auto;
-    bottom: 0;
-    z-index: 10;
+    margin-bottom: 0;
 
     width: 100%;
     height: 93px;
