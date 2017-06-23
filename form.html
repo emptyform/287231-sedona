@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Седона</title>
+
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
+
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
   </head>
   <body>
     <div class="wrapper">
@@ -82,7 +90,7 @@
             <div class="form__fieldset form__fieldset--contact">
               <h2 class="form__legend form__legend--contact">Контактная информация:</h2>
 
-              <div class="form__container">
+              <div class="form__container form__container--contact">
                 <div class="form__wrapper form__wrapper--vertical form__wrapper--phone">
                   <label class="form__label form__label--vertical" for="tel"><span class="form__label-hidden">Контактный&nbsp;</span>телефон*:</label>
                   <input class="form__text form__text--contact" id="tel" type="tel" name="tel" placeholder="Введите телефон" required>
@@ -117,7 +125,7 @@
             <div class="form__fieldset form__fieldset--places">
               <h2 class="form__legend form__legend--places">Посещенные достопримечательности:</h2>
 
-              <div class="form__container">
+              <div class="form__container form__container--places">
                 <div class="form__wrapper form__wrapper--checkbox">
                   <input class="form__checkbox" id="devil-bridge" type="checkbox" name="devil-bridge" checked>
                   <label class="form__label form__label--checkbox" for="devil-bridge">Мост Дьявола</label>
@@ -194,5 +202,7 @@
       </div>
       <button class="btn" type="button">Ок</button>
     </div>
+    <script src="js\svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
   </body>
 </html>

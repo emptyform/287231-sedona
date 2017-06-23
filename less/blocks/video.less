@@ -164,21 +164,24 @@
   border: none;
   height: 20px;
 
-  @media @tablet-width {
-    filter: invert(1) brightness(2);
-
-  }
-
   &--refresh {
     width: 16px;
     margin-right: auto;
     background-image: url('../img/icon-video-replay.svg');
+
+    @media @tablet-width {
+      background-image: url('../img/icon-video-replay-tablet.svg');
+    }
   }
 
   &--subtitles {
     width: 32px;
     background-image: url('../img/icon-video-subtitles.svg');
     margin-right: 31px;
+
+    @media @tablet-width {
+      background-image: url('../img/icon-video-subtitles-tablet.svg');
+    }
   }
 
   &--fullscreen {
@@ -187,6 +190,7 @@
 
     @media @tablet-width {
       margin-right: 6px;
+      background-image: url('../img/icon-video-fullscreen-tablet.svg');
     }
   }
 }
