@@ -1,4 +1,3 @@
-// main: ../style.less
 .page-intro {
   position: relative;
   z-index: 10;
@@ -13,27 +12,27 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media @retina and (max-width: 767px) {
+    background-image: url('../img/bg-intro-triangle-mobile.svg'), url('../img/bg-back-mobile@2x.jpg');
+  }
+
   @media @tablet-width {
     height: 518px;
     background-image: url('../img/bg-intro-triangle-tablet.svg'),url('../img/bg-back-tablet@1x.jpg');
     background-size: 100%, cover;
     background-position: bottom, center;
+
+    @media @retina {
+      background-image: url('../img/bg-intro-triangle-tablet.svg'), url('../img/bg-back-tablet@2x.jpg');
+    }
   }
 
   @media @desktop-width {
     background-image: url('../img/bg-intro-triangle-desktop.svg'),url('../img/bg-back-desktop@1x.jpg');
-  }
 
-  @media @retina {
-    background-image: url('../img/bg-intro-triangle-mobile.svg'), url('../img/bg-back-mobile@2x.jpg');
-  }
-
-  @media @retina and @tablet-width {
-    background-image: url('../img/bg-intro-triangle-tablet.svg'),url('../img/bg-back-tablet@2x.jpg');
-  }
-
-  @media @retina and @desktop-width {
-    background-image: url('../img/bg-intro-triangle-desktop.svg'),url('../img/bg-back-desktop@2x.jpg');
+    @media @retina {
+      background-image: url('../img/bg-intro-triangle-desktop.svg'), url('../img/bg-back-desktop@2x.jpg');
+    }
   }
 
   &--small {
