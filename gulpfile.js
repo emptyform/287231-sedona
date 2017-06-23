@@ -22,7 +22,7 @@ gulp.task("style", function() {
       })
     ]))
     .pipe(gulp.dest("build/css"))
-    .pipe(plugins.imagemin())
+    .pipe(plugins.csso())
     .pipe(plugins.rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
