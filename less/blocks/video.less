@@ -66,6 +66,7 @@
   margin-right: auto;
   padding: 0 20px;
 
+  background-color: #9c9281;
   background-image: url('../img/video-mobile@1x.jpg');
   background-size: cover;
 
@@ -162,35 +163,41 @@
 .video__btn {
   background-color: transparent;
   border: none;
-  height: 20px;
+  fill: #454545;
+  padding: 0;
+
+  &:hover {
+    fill: @text-gray;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media @tablet-width {
+    fill: white;
+
+    &:hover {
+      fill: @text-gray;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 
   &--refresh {
-    width: 16px;
     margin-right: auto;
-    background-image: url('../img/icon-video-replay.svg');
-
-    @media @tablet-width {
-      background-image: url('../img/icon-video-replay-tablet.svg');
-    }
   }
 
   &--subtitles {
-    width: 32px;
-    background-image: url('../img/icon-video-subtitles.svg');
     margin-right: 31px;
-
-    @media @tablet-width {
-      background-image: url('../img/icon-video-subtitles-tablet.svg');
-    }
   }
 
   &--fullscreen {
-    width: 20px;
-    background-image: url('../img/icon-video-fullscreen.svg');
 
     @media @tablet-width {
       margin-right: 6px;
-      background-image: url('../img/icon-video-fullscreen-tablet.svg');
     }
   }
 }
