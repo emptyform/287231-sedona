@@ -14,6 +14,9 @@
 }
 
 .social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 48px;
   height: 48px;
   fill: white;
@@ -21,15 +24,14 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  &--twitter {
-    background-image: url('../img/icon-twitter.svg');
+
+  &:hover {
+    background-color: @btn-hover;
   }
 
-  &--facebook {
-    background-image: url('../img/icon-facebook.svg');
-  }
+  &:active {
+    background-color: @btn-active;
+    fill: rgba(255, 255, 255, 0.3);
 
-  &--youtube {
-    background-image: url('../img/icon-youtube.svg');
   }
 }

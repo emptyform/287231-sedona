@@ -68,7 +68,7 @@
 
     @media @tablet-width {
       width: 100% / 3;
-      height: 256px;
+      min-height: 256px;
     }
   }
 }
@@ -93,7 +93,7 @@
   }
 
   &--inactive {
-    padding-top: 20px;
+    padding-top: 0;
     padding-bottom: 27px;
     background-image: none;
 
@@ -131,6 +131,7 @@
   margin-right: auto;
   text-align: center;
 
+
   .heading();
 
   @media @desktop-width {
@@ -139,10 +140,14 @@
   }
 
   &--inactive {
+    padding-top: 27px;
     color: @text-gray;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 
     @media @tablet-width {
+      padding-top: 0;
       max-width: 150px;
+      border-top: none;
     }
   }
 }
@@ -257,6 +262,7 @@
   }
 
   &--town {
+    background-color: #5d5844;
     background-image: url('../img/photo-city-mobile@1x.jpg');
 
     @media @tablet-width {
@@ -281,6 +287,7 @@
   }
 
   &--bridge {
+    background-color: #926855;
     background-image: url('../img/photo-bridge-mobile@1x.jpg');
 
     @media @tablet-width {

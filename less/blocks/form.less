@@ -349,6 +349,25 @@
   &:checked + .form__label::before {
     background-color: @text-gray;
   }
+
+  &:checked + .form__label:hover::before {
+    border-color: @input-hover;
+  }
+
+  &:checked + .form__label:active::before {
+    background-color: fade(@text-gray, 30%);
+    border-color: @radio-active;
+  }
+
+  &:not(:checked) + .form__label:hover::before {
+    background-color: @input-hover;
+    border-color: @input-hover;
+  }
+
+  &:not(:checked) + .form__label:active::before {
+    background-color: @radio-active;
+    border-color: @radio-active;
+  }
 }
 
 .form__checkbox {
@@ -356,6 +375,22 @@
 
   &:checked + .form__label::before {
     background-image: url('../img/icon-tick.svg');
+  }
+
+  &:checked + .form__label:hover::before {
+    background-color: @input-hover;
+  }
+
+  &:checked + .form__label:active::before {
+    background-color: fade(@text-gray, 30%);
+  }
+
+  &:not(:checked) + .form__label:hover::before {
+    background-color: @input-hover;
+  }
+
+  &:not(:checked) + .form__label:active::before {
+    background-color: @radio-active;
   }
 }
 
@@ -389,6 +424,17 @@
     color: black;
     opacity: 1;
   }
+
+  &:hover {
+    background-color: @input-hover;
+  }
+
+  &:focus {
+    background-color: white;
+    border: 4px solid @input-hover;
+    padding-left: 18px;
+    outline: none;
+  }
 }
 
 .form__textarea {
@@ -402,6 +448,7 @@
 
   border: none;
   background-color: @sedona-gray;
+  resize: none;
 
   @media @tablet-width {
 
@@ -410,6 +457,18 @@
   &::placeholder {
     color: black;
     opacity: 1;
+  }
+
+  &:hover {
+    background-color: @input-hover;
+  }
+
+  &:focus {
+    padding-top: 10px;
+    background-color: white;
+    border: 4px solid @input-hover;
+    padding-left: 18px;
+    outline: none;
   }
 }
 
@@ -455,23 +514,4 @@
     display: block;
     margin-top: 5px;
   }
-}
-
-.form__popup {
-  display: none;
-  background-color: @sedona-gray;
-}
-
-.form__popup-main {
-  background-color: white;
-}
-
-.form__popup-heading {
-  .heading();
-}
-
-.form__popup-text {
-  color: @text-gray;
-  line-height: 24px;
-  text-align: center;
 }

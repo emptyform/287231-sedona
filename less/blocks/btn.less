@@ -12,7 +12,7 @@
 
   background-color: @sedona-blue;
   border: none;
-
+  cursor: pointer;
 
   .bold();
 
@@ -22,5 +22,28 @@
 
   &--submit {
     padding-right: 10px;
+  }
+
+  &--popup-failure {
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media @tablet-width {
+      width: 272px;
+    }
+  }
+
+  &:hover {
+    background-color: @btn-hover;
+  }
+
+  &:active {
+    background-color: @btn-active;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: @input-hover;
   }
 }
